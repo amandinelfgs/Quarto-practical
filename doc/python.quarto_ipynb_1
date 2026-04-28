@@ -1,0 +1,47 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {},
+      "source": [
+        "---\n",
+        "title: \"Python code\"\n",
+        "author: \"Amandine\"\n",
+        "format: html\n",
+        "from: markdown+emoji\n",
+        "code-block-bg: true\n",
+        "code-block-border-left: orange\n",
+        "---"
+      ],
+      "id": "dd3a7419"
+    },
+    {
+      "cell_type": "code",
+      "metadata": {},
+      "source": [
+        "import numpy as np\n",
+        "import matplotlib.pyplot as plt\n",
+        "from scipy.stats import norm\n",
+        "\n",
+        "x = np.linspace(-5, 5, 1000)\n",
+        "\n",
+        "pdf = norm.pdf(x, 0, 1)\n",
+        "plt.plot(x, pdf, label='Normal Distribution')\n",
+        "plt.show()"
+      ],
+      "id": "58552561",
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "kernelspec": {
+      "name": "python3",
+      "language": "python",
+      "display_name": "Python 3 (ipykernel)",
+      "path": "/opt/python/share/jupyter/kernels/python3"
+    }
+  },
+  "nbformat": 4,
+  "nbformat_minor": 5
+}
